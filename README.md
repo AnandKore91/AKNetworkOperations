@@ -16,10 +16,10 @@ AKNetworkOperation provides easy way to request web services and handle response
 >**Step 4 :** Build Parameter dictionary
 
 >NSMutableDictionary *dictPara=[[NSMutableDictionary alloc]init];
-    >>[dictPara setValue:@"PARA_1_VALUE" forKey:@"PARA_1_KEY"];
-    >>[dictPara setValue:@"PARA_2_VALUE" forKey:@"PARA_2_KEY"];
-    >>[dictPara setValue:@"PARA_3_VALUE" forKey:@"PARA_3_KEY"];
-    >>[dictPara setValue:@"PARA_4_VALUE" forKey:@"PARA_4_KEY"];
+    - [dictPara setValue:@"PARA_1_VALUE" forKey:@"PARA_1_KEY"];
+    - [dictPara setValue:@"PARA_2_VALUE" forKey:@"PARA_2_KEY"];
+    - [dictPara setValue:@"PARA_3_VALUE" forKey:@"PARA_3_KEY"];
+    - [dictPara setValue:@"PARA_4_VALUE" forKey:@"PARA_4_KEY"];
     
 
 >**Step 5 :** Implement NetworkOpertation request method
@@ -29,9 +29,9 @@ AKNetworkOperation provides easy way to request web services and handle response
 >[[NetworkOperations sharedInstance]sendRequestWithURL:serviceURL parameters:dictPara parameterType:PARA_TYPE_STRING HttpMethod:GET_METHOD taskType:DATA_TASK uploadData:nil inBackground:NO userInfo:@"Anthing that you want back in delegate response method." delegate:self];
 
 >**Parameters :** 
-    -1.RequestWithURL  :** Your service URL in NSURL type.
-    -2.Parameters      :** Should be in NSMutableDictionary format.
-    -3.ParameterType   :** Parameter type is your kind of format in which you want to send the parameter to server.
+    - 1.RequestWithURL  :** Your service URL in NSURL type.
+    - 2.Parameters      :** Should be in NSMutableDictionary format.
+    - 3.ParameterType   :** Parameter type is your kind of format in which you want to send the parameter to server.
   >>**Example :**
   >>**a)PARA_TYPE_SOAP -** For SOAP Request parameters.
   >>**b)PARA_TYPE_JSON -** For JSON Request parameters.
