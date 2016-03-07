@@ -32,16 +32,16 @@ AKNetworkOperation provides easy way to request web services and handle response
 >>**1.RequestWithURL  :** Your service URL in NSURL type.
 >>**2.Parameters      :** Should be in NSMutableDictionary format.
 >>**3.ParameterType   :** Parameter type is your kind of format in which you want to send the parameter to server.
-  >>>**Example :**
-  >>>**a)PARA_TYPE_SOAP -** For SOAP Request parameters.
-  >>>**b)PARA_TYPE_JSON -** For JSON Request parameters.
-  >>>**c)PARA_TYPE_STRING -** For normal string (GET Method) request parameter.
+  >>**Example :**
+  >>**a)PARA_TYPE_SOAP -** For SOAP Request parameters.
+  >>**b)PARA_TYPE_JSON -** For JSON Request parameters.
+  >>**c)PARA_TYPE_STRING -** For normal string (GET Method) request parameter.
 >>**4.HttpMethod      :** GET OR POST
 >>**5.TaskType        :** The operation you want to perform, example : normal JSON or String response request or Data upload or Data download.
   **Types :**
-    >>>a)DATA_TASK
-    >>>b)DATA_UPLOAD_TASK
-    >>>c)DATA_DOWNLOAD_TASK
+    >>a)DATA_TASK
+    >>b)DATA_UPLOAD_TASK
+    >>c)DATA_DOWNLOAD_TASK
 >>**6.UploadData      :** When data task is DATA_UPLOAD_TASK you need to provide data/bytes in NSData format to be uploaded on server.
   Usage example - When you want to upload a photo to server, simply all you need to do is, convert that image into NSData and choose TaskType as DATA_UPLOAD_TASK and provide that data with "UploadData" parameter.
 >>**7.InBackground    :** BOOL value to select in which thread you want to perform the action.
