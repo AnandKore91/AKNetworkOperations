@@ -61,7 +61,9 @@ AKNetworkOperation provides easy way to request web services and handle response
     9.delegate        : Where you want to handle the response delegate method
 
 >**Step 6 Delegate method    :** Implement the delegate method to handle the response 
-        -(void)akNetworkOperationDidFinishRequestWithResponse:(NSMutableDictionary*)response error:(NSError*)error;
+
+    -(void)akNetworkOperationDidFinishRequestWithResponse:(NSMutableDictionary*)response error:(NSError*)error;
+    
         Response Dictionary structure / Defined Keys for acces data :
             a)AK_Response_Bytes   -** Contains reposnse in NSData format.
             b)AK_Response_Error   -** Contains NSError if occured.
