@@ -73,7 +73,22 @@ AKNetworkOperation provides easy way to request web services and handle response
             f)AK_Request_URL      -** Contain NSURL of request and response is for.
     
   
+##Utility Methods##
+    Utility method provide feature to convert the NSDictionary data into multi format data.
+    Example :
+        1. Convert to SOAP string : This method takes NSDictionary as parameter and returns SOAP string of that NSDictionary.
+        -(NSString*)convertDictionaryToSOAPKindString:(NSMutableDictionary*)dictionary;
+        
+        2. Convert to GET/Plain Parameter String : This method takes NSDictionary as parameter and returns GET kinda parameter string of that NSDictionary.
+        -(NSString*)convertDictionaryToGETkindString:(NSMutableDictionary*)dictionary;
+        
+        3. Convert to JSON string : This method takes NSDictionary as parameter and returns JSON string of that NSDictionary.
+        -(NSString*)convertDictionaryToJSONkindString:(NSMutableDictionary*)dictionary;
 
+        4.XML Parser : This method takes NSData & NSError as parameter and parses NSData and returns in JSON format.
+        -(NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
+
+        
 
 
 
