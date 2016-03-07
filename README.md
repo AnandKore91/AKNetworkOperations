@@ -1,19 +1,19 @@
-# AKNetworkOperations
+# AKNetworkOperations#
 AKNetworkOperation provides easy way to request web services and handle response in simple way. It offers multiple kind of request types and data parsers like XML and JSON etc.
 
 
-#Usage
+##Usage##
 
-Step 1 :
-#import "NetworkOperations.h"
+**Step 1 :**\n
+#import "NetworkOperations.h"\n
 
-Step 2 : Define delegate 
+**Step 2 :** Define delegate \n
 @interface ViewController : UIViewController<NetworkOperationDelegate>
 
-Step 3 : Build URL
+**Step 3 :** Build URL
 NSURL *serviceURL=[NSURL URLWithString:[NSString stringWithFormat:@"YourURL"]];
 
-Step 4 : Build Parameter dictionary
+**Step 4 :** Build Parameter dictionary
 
 NSMutableDictionary *dictPara=[[NSMutableDictionary alloc]init];
     [dictPara setValue:@"PARA_1_VALUE" forKey:@"PARA_1_KEY"];
@@ -22,7 +22,7 @@ NSMutableDictionary *dictPara=[[NSMutableDictionary alloc]init];
     [dictPara setValue:@"PARA_4_VALUE" forKey:@"PARA_4_KEY"];
     
 
-Step 5 : Implement NetworkOpertation request method
+**Step 5 :** Implement NetworkOpertation request method
 -(void)sendRequestWithURL:(NSURL *)URL parameters:(NSMutableDictionary *)parameters parameterType:(NSString *)parameterType HttpMethod:(NSString *)method taskType:(NSString *)taskType uploadData:(NSData *)uploadData inBackground:(BOOL)inBackground userInfo:(id)userInfo delegate:(id)delegate;
 
 Example :
