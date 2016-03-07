@@ -4,16 +4,16 @@ AKNetworkOperation provides easy way to request web services and handle response
 
 ##Usage##
 
-**Step 1 :**\n
-#import "NetworkOperations.h"\n
+**Step 1 :**
+>#import "NetworkOperations.h"\n
 
-**Step 2 :** Define delegate \n
-@interface ViewController : UIViewController<NetworkOperationDelegate>
+>**Step 2 :** Define delegate \n
+>@interface ViewController : UIViewController<NetworkOperationDelegate>
 
-**Step 3 :** Build URL
-NSURL *serviceURL=[NSURL URLWithString:[NSString stringWithFormat:@"YourURL"]];
+>**Step 3 :** Build URL
+>NSURL *serviceURL=[NSURL URLWithString:[NSString stringWithFormat:@"YourURL"]];
 
-**Step 4 :** Build Parameter dictionary
+>**Step 4 :** Build Parameter dictionary
 
 NSMutableDictionary *dictPara=[[NSMutableDictionary alloc]init];
     [dictPara setValue:@"PARA_1_VALUE" forKey:@"PARA_1_KEY"];
